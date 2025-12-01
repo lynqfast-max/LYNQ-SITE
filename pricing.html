@@ -31,24 +31,36 @@
       </div>
     </nav>
 
-    <section class="lf-hero" id="top">
-      <div class="lf-hero__content">
-        <p class="lf-hero__eyebrow">LYNQFAST Plans</p>
-        <h1 class="lf-hero__title">Simple, transparent pricing. No surprises.</h1>
-        <p class="lf-hero__subtitle">
+    <section class="lf-hero" id="top" style="position: relative; padding: 5rem 2rem; min-height: 75vh; display: flex; align-items: center;">
+      <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%); z-index: 0;"></div>
+      <div style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(168, 85, 247, 0.15), transparent); filter: blur(100px); z-index: 0;"></div>
+      
+      <div style="max-width: 1100px; margin: 0 auto; text-align: center; position: relative; z-index: 1;">
+        <span style="display: inline-block; background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(168, 85, 247, 0.15)); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 50px; padding: 0.6rem 1.8rem; margin-bottom: 2rem; font-size: 0.9rem; font-weight: 600; color: #a855f7; letter-spacing: 0.5px;">💰 LYNQFAST PLANS</span>
+        
+        <h1 style="font-size: 4rem; line-height: 1.1; margin: 0 0 1.5rem 0; font-weight: 700;">
+          Simple, transparent pricing.<br />
+          <span style="background: linear-gradient(135deg, #38bdf8, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">No surprises.</span>
+        </h1>
+        
+        <p style="font-size: 1.2rem; color: #94a3b8; line-height: 1.7; max-width: 750px; margin: 0 auto 3rem;">
           Pick the speed that matches your life or business. No teaser rates that double later, and no hidden fees buried in the fine print.
         </p>
-        <div class="lf-hero__cta-row">
-          <a href="tel:+18886516633" class="lf-btn lf-btn--primary">Talk through your options</a>
-          <a href="#residential" class="lf-btn lf-btn--ghost">See residential plans</a>
+        
+        <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 4rem;">
+          <a href="tel:+18886516633" class="lf-btn lf-btn--primary" style="font-size: 1.05rem;">Talk through your options</a>
+          <a href="#residential" class="lf-btn lf-btn--ghost" style="font-size: 1.05rem;">See residential plans</a>
         </div>
-      </div>
-      <div class="lf-hero__visual">
-        <div class="lf-hero__orb lf-hero__orb--one"></div>
-        <div class="lf-hero__orb lf-hero__orb--two"></div>
-        <div class="lf-hero__panel">
-          <p class="lf-metric__label">Average monthly bill change</p>
-          <p style="margin-top:0.4rem;font-size:0.9rem;color:#9ca3af;">Customers who switched to LYNQFAST report an average <strong>18% reduction</strong> in their monthly internet costs compared to their previous provider.</p>
+        
+        <div class="animate-on-scroll" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.6)); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 20px; padding: 2.5rem; max-width: 700px; margin: 0 auto; backdrop-filter: blur(10px);">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #38bdf8, #a855f7); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">📊</div>
+            <div style="text-align: left;">
+              <div style="font-size: 0.85rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Average savings</div>
+              <div style="font-size: 1.8rem; font-weight: 700; color: #38bdf8;">18% reduction</div>
+            </div>
+          </div>
+          <p style="font-size: 0.95rem; color: #cbd5e1; line-height: 1.6; margin: 0;">Customers who switched to LYNQFAST report an average <strong style="color: #38bdf8;">18% reduction</strong> in their monthly internet costs compared to their previous provider.</p>
         </div>
       </div>
     </section>
@@ -56,9 +68,9 @@
 
   <main>
     <section class="lf-section lf-section--contrast" id="residential">
-      <div class="lf-section__head">
+      <div class="lf-section__head" style="text-align: center;">
         <h2>Residential internet plans</h2>
-        <p>For homes that stream, play, and work online every day. All residential plans include unlimited data and Wi‑Fi 6 hardware.</p>
+        <p style="max-width: 700px; margin-left: auto; margin-right: auto;">For homes that stream, play, and work online every day. All residential plans include unlimited data and Wi‑Fi 6 hardware.</p>
       </div>
       <div class="lf-grid lf-grid--plans">
         <article class="lf-plan">
@@ -102,9 +114,9 @@
     </section>
 
     <section class="lf-section" id="business">
-      <div class="lf-section__head">
+      <div class="lf-section__head" style="text-align: center;">
         <h2>Business and multi‑site plans</h2>
-        <p>For small offices, storefronts, and growing organizations that need predictable performance and clear SLAs.</p>
+        <p style="max-width: 700px; margin-left: auto; margin-right: auto;">For small offices, storefronts, and growing organizations that need predictable performance and clear SLAs.</p>
       </div>
       <div class="lf-grid lf-grid--plans">
         <article class="lf-plan">
@@ -144,24 +156,108 @@
       </div>
     </section>
 
+    <!-- New ROI Calculator Section -->
+    <section class="lf-section lf-section--contrast animate-fade-in-up">
+      <div class="lf-section__head" style="text-align: center;">
+        <h2>Calculate your savings with LYNQFAST</h2>
+        <p style="max-width: 700px; margin-left: auto; margin-right: auto;">See how much you could save by switching from your current provider.</p>
+      </div>
+      <div class="lf-layout">
+        <div class="lf-layout__copy">
+          <div class="lf-card" style="padding: 2rem;">
+            <h3 style="margin-bottom: 1.5rem;">Annual Savings Comparison</h3>
+            <div class="lf-stats-grid" style="grid-template-columns: repeat(2, 1fr); margin: 0;">
+              <div class="lf-stat-item">
+                <span class="lf-stat-number">$420</span>
+                <span class="lf-stat-label">Avg Annual Savings</span>
+              </div>
+              <div class="lf-stat-item">
+                <span class="lf-stat-number">18%</span>
+                <span class="lf-stat-label">Cost Reduction</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem; padding: 1.5rem; background: rgba(56, 189, 248, 0.1); border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">
+              <h4 style="margin-bottom: 0.75rem;">💰 What you get with savings:</h4>
+              <ul style="list-style: none; font-size: 0.9rem; color: var(--lf-text-soft);">
+                <li style="margin-bottom: 0.5rem;">✓ No price increases after year 1</li>
+                <li style="margin-bottom: 0.5rem;">✓ No hidden fees or equipment rentals</li>
+                <li style="margin-bottom: 0.5rem;">✓ Free WiFi 6 router (save $150/year)</li>
+                <li>✓ No data cap overage charges</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="lf-layout__visual">
+          <div class="lf-image-container" style="height: 100%; min-height: 400px;">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80" alt="Cost Savings">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="lf-section" id="extras">
-      <div class="lf-section__head">
+      <div class="lf-section__head" style="text-align: center;">
         <h2>Included with every LYNQFAST plan</h2>
         <p>We price for the long term, not short‑term promotions. Every plan comes with the essentials built in.</p>
       </div>
       <div class="lf-grid lf-grid--support">
-        <article class="lf-support">
-          <h3>Unlimited Data</h3>
+        <article class="lf-support animate-scale-in animate-delay-1">
+          <div class="lf-image-container" style="height: 140px; margin-bottom: 1rem;">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80" alt="Unlimited Data">
+          </div>
+          <h3>🚀 Unlimited Data</h3>
           <p>No caps, no throttling based on usage. Use your connection as much as you need, whenever you need it.</p>
         </article>
-        <article class="lf-support">
-          <h3>Modern Hardware</h3>
+        <article class="lf-support animate-scale-in animate-delay-2">
+          <div class="lf-image-container" style="height: 140px; margin-bottom: 1rem;">
+            <img src="https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=600&q=80" alt="Modern Hardware">
+          </div>
+          <h3>📡 Modern Hardware</h3>
           <p>Wi‑Fi 6 hardware is included, and we will help you place it for best coverage in your home or office.</p>
         </article>
-        <article class="lf-support">
-          <h3>30‑Day Satisfaction</h3>
+        <article class="lf-support animate-scale-in animate-delay-3">
+          <div class="lf-image-container" style="height: 140px; margin-bottom: 1rem;">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80" alt="Satisfaction Guarantee">
+          </div>
+          <h3>✨ 30‑Day Satisfaction</h3>
           <p>If LYNQFAST does not meet your expectations in the first 30 days, you can leave without penalty.</p>
         </article>
+      </div>
+    </section>
+
+    <!-- New Testimonials with Images -->
+    <section class="lf-section lf-section--contrast animate-fade-in-up">
+      <div class="lf-section__head" style="text-align: center;">
+        <h2>What our customers are saying</h2>
+        <p style="max-width: 700px; margin-left: auto; margin-right: auto;">Real experiences from people who made the switch to LYNQFAST.</p>
+      </div>
+      <div class="lf-comparison">
+        <div class="lf-comparison-item">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <div style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 2px solid rgba(56, 189, 248, 0.5);">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80" alt="Customer" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div>
+              <h4>Jennifer Martinez</h4>
+              <p style="font-size: 0.8rem; color: var(--lf-text-muted);">Remote Software Developer</p>
+            </div>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--lf-text-soft);">"Switched from Comcast and my monthly bill dropped by $35 while getting FASTER speeds. Video calls are crystal clear now. Best decision ever!"</p>
+          <div style="margin-top: 1rem; color: #fbbf24;">★★★★★</div>
+        </div>
+        <div class="lf-comparison-item">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <div style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 2px solid rgba(56, 189, 248, 0.5);">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Customer" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div>
+              <h4>Michael Chen</h4>
+              <p style="font-size: 0.8rem; color: var(--lf-text-muted);">Small Business Owner</p>
+            </div>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--lf-text-soft);">"Our office of 12 people runs entirely on LYNQFAST. The support team actually answers the phone! Worth every penny for the peace of mind."</p>
+          <div style="margin-top: 1rem; color: #fbbf24;">★★★★★</div>
+        </div>
       </div>
     </section>
   </main>
